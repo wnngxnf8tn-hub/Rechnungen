@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 45 34% 96%;
+  --foreground: 30 10% 22%;
+  --card: 45 23% 91%;
+  --card-foreground: 30 10% 22%;
+  --muted: 42 22% 88%;
+  --muted-foreground: 30 10% 34%;
+  --border: 40 14% 82%;
+  --input: 40 14% 82%;
+}
+
+* {
+  @apply border-border;
+}
+
+html,
+body {
+  @apply bg-background text-foreground antialiased;
+  font-family: "Inter", "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+  overscroll-behavior-y: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Newsreader", "Playfair Display", "Merriweather", serif;
+  letter-spacing: -0.01em;
+}
+
+.font-display {
+  font-family: "Newsreader", "Playfair Display", "Merriweather", serif;
+  letter-spacing: -0.01em;
+}
+
+.dark {
+  --background: 42 28% 92%;
+  --foreground: 30 11% 24%;
+  --card: 42 20% 88%;
+  --card-foreground: 30 11% 24%;
+  --muted: 40 18% 84%;
+  --muted-foreground: 30 10% 36%;
+  --border: 40 13% 76%;
+  --input: 40 13% 76%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f6f1e8;
+  background-image: none;
+  letter-spacing: -0.011em;
+}
+
+.lucide {
+  stroke-width: 1.5;
+}
